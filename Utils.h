@@ -12,13 +12,6 @@
 
 class Utils
 {
-private:
-	static std::string readShaderFile(const char *filePath);
-	static void printShaderLog(GLuint shader);
-	static void printProgramLog(int prog);
-	static GLuint prepareShader(int shaderTYPE, const char *shaderPath);
-	static int finalizeShaderProgram(GLuint sprogram);
-
 public:
 	Utils();
 	static bool checkOpenGLError();
@@ -43,4 +36,11 @@ public:
 	static float* bronzeDiffuse();
 	static float* bronzeSpecular();
 	static float bronzeShininess();
+
+private:
+	static std::string readShaderFile(const char* filePath);
+	static void printShaderLog(GLuint shader);
+	static void printProgramLog(int prog);
+	static GLuint prepareShader(int shaderTYPE, const char* shaderPath);
+	static int finalizeShaderProgram(GLuint sprogram);
 };

@@ -8,5 +8,5 @@ uniform mat4 proj_matrix;
 
 void main(void)
 {
-	color = varyingColor;
+    color = varyingColor;
 }

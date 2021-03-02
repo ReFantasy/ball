@@ -12,4 +12,4 @@ include_directories("F:/Simulation/d/include")
 link_directories("F:/Simulation/d/lib")
 link_libraries(glew32 glfw3 soil2 ${OPENGL_LIBRARY})
 
-add_executable(ball main.cpp Utils.h Utils.cpp)
+add_executable(ball main.cpp Utils.h Utils.cpp renderer.h renderer.cpp Sphere.h Sphere.cpp)
